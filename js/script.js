@@ -10,12 +10,24 @@
 /* INPUT */
 // Richiedere all'utente l'età
 const userAge = parseInt(prompt("Qual è la tua età?"));
+
+// Errore
+if (isNaN(userAge)) {
+    alert("ERRORE!!! L'età inserita non è un numero!");
+}
+
 // Richiedere all'utente il numero di chilometri da percorrere
 const userDistance = parseInt(prompt("Quanti km devi percorrere?"));
 console.log(userAge, typeof(userAge), userDistance, typeof(userDistance));
 
+// Errore
+if (isNaN(userDistance)) {
+    alert("ERRORE!!! La i km da percorrere inseriti non sono un numero!");
+}
+
 /* ELABORAZIONE DATI */
 // Moltiplicare 0.21€ per i km da percorrere per ottenere il prezzo parziale
+
 const pricePerKm = 0.21;
 let pricePartial = pricePerKm * userDistance;
 console.log(pricePartial);
@@ -39,3 +51,4 @@ console.log("priceFinal:", priceFinal);
 /* OUTPUT */
 // Mostrare il prezzo finale del biglietto
 document.getElementById("ticket-price").innerHTML = "Prezzo del biglietto: " + priceFinal;
+
