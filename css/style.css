@@ -6,10 +6,76 @@
 }
 
 /* COMMON */
-body {
-    background-color: blue;
+html {
+    font-family: 'Silkscreen', cursive;
 }
 
-html {
+.ms_main-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
     color: bisque;
+}
+
+main {
+    width: 100%;
+    height: 80%;
+    
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.ms_ticket {
+    display: flex;
+    width: 30rem;
+    height: 15rem;
+
+    background-color: #ffddcc;
+    color: dimgrey;
+    box-shadow: 10px 10px 3px #00000070;
+
+    margin: 50px auto;
+
+    transform: rotate(-10deg);
+}
+
+.ms_logo-container {
+    display: flex;
+    
+    width: 10%;
+    height: 100%;
+    
+    border-right: 1px dashed black;
+}
+
+.ms_logo {
+    font-size: 1.5rem;
+    writing-mode: sideways-lr;
+}
+
+.ms_ticket-text {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+}
+
+.ms_ticket-text i {
+    position: absolute;
+    font-size: 13rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #00000020;
+}
+
+#ticket-price {
+    font-size: 2rem;
 }
