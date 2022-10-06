@@ -50,5 +50,5 @@ console.log("priceFinal:", priceFinal);
 
 /* OUTPUT */
 // Mostrare il prezzo finale del biglietto
-document.getElementById("ticket-price").innerHTML = "Prezzo del biglietto: " + priceFinal;
+document.getElementById("ticket-price").innerHTML = `Prezzo del biglietto: ${priceFinal} €`
 
