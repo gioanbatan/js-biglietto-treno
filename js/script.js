@@ -9,7 +9,10 @@
 
 /* INPUT */
 // Richiedere all'utente l'età
-// Richiedere all'utente il numero di chilometrio da percorrere
+const userAge = parseInt(prompt("Qual è la tua età?"));
+// Richiedere all'utente il numero di chilometri da percorrere
+const userDistance = parseInt(prompt("Quanti km devi percorrere?"));
+console.log(userAge, typeof(userAge), userDistance, typeof(userDistance));
 
 /* ELABORAZIONE DATI */
 // Moltiplicare 0.21€ per i km da percorrere per ottenere il prezzo parziale
